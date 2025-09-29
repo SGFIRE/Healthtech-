@@ -69,7 +69,7 @@ except:
 
 DEPIN_CONFIG = {
     "network_nodes": [
-        {"id": "node_1", "api_key": "AIzaSyBZNNb9t18a0RVBPtch0knP3nlSNWWu4BA", "region": "us-east", "reputation": 95},
+        {"id": "node_1", "api_key": "", "region": "us-east", "reputation": 95},
         {"id": "node_2", "api_key": "backup_key_here", "region": "eu-west", "reputation": 92},
         {"id": "node_3", "api_key": "backup_key_2_here", "region": "asia-pacific", "reputation": 88}
     ],
