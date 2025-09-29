@@ -1,1 +1,57 @@
 
+import os
+from typing import Dict, Any
+
+class Settings:
+    """Application settings configuration"""
+
+    # API Configuration
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
+
+    # Email Configuration
+    GMAIL_USER: str = os.getenv("GMAIL_USER", "")
+    GMAIL_APP_PASSWORD: str = os.getenv("GMAIL_APP_PASSWORD", "")
+
+    # DePIN Configuration
+    DEPIN_NETWORK_NODES: Dict[str, Any] = [
+        {
+            "id": "node_1",
+            "api_key": GOOGLE_API_KEY,
+            "region": "us-east",
+            "reputation": 95
+        },
+        {
+            "id": "node_2",
+            "api_key": "backup_key_here",
+            "region": "eu-west",
+            "reputation": 92
+        },
+        {
+            "id": "node_3",
+            "api_key": "backup_key_2_here",
+            "region": "asia-pacific",
+            "reputation": 88
+        }
+    ]
+    DEPIN_CONSENSUS_THRESHOLD: float = float(os.getenv("DEPIN_CONSENSUS_THRESHOLD", "0.66"))
+    DEPIN_MIN_NODES: int = int(os.getenv("DEPIN_MIN_NODES", "1"))
+    GOVERNANCE_TOKEN: str = "MEDAI"
+    BASE_REWARD: int = 10
+
+    # Application Configuration
+    DEBUG: bool = os.getenv("DEBUG", "False").lower() == "true"
+    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+    MAX_UPLOAD_SIZE: str = os.getenv("MAX_UPLOAD_SIZE", "10MB")
+
+    # Database Configuration
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///depin_medical.db")
+
+    # Security Configuration
+    SECRET_KEY: str = os.getenv("SECRET_KEY", "dev-secret-key")
+    ENCRYPTION_KEY: str = os.getenv("ENCRYPTION_KEY", "")
+
+    # Audio Configuration
+    AUDIO_SAMPLE_RATE: int = int(os.getenv("AUDIO_SAMPLE_RATE", "44100"))
+    AUDIO_CHANNELS: int = int(os.getenv("AUDIO_CHANNELS", "1"))
+
+settings = Settings()
