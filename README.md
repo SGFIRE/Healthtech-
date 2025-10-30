@@ -188,6 +188,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/SGFIRE/depin-medical-ai/discussions)
 - **Email**: support@depin-medical.ai
 ## certification link https://hashgraphdev.com/courses/hashgraph-developer-course
+## pitch deck
+https://youtu.be/6rhO31Fmkw0?si=_4opo0paRDhbuA1Z
 ---
 
 **Built with ❤️ by the DePIN Medical AI Community**
