@@ -136,7 +136,7 @@ The platform includes 5 AI specialists:
 - **Access Control**: Role-based permissions and authentication
 
 ## 🤝 Contributing
-
+hackathon@hashgraph-association.com
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ### Development Setup
