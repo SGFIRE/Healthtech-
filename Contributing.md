@@ -1,5 +1,5 @@
 # Contributing to DePIN Medical AI Network
-
+hackathon@hashgraph-association.com
 We welcome contributions from the community! This document outlines how to contribute to the project.
 
 ## Code of Conduct
